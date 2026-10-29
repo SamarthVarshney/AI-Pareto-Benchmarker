@@ -1,0 +1,9 @@
+model_id,model_name,technique,accuracy_pct,energy_wh_per_1k,co2_g_per_1k,latency_ms,size_mb,artifact_path
+base_fp32,Base FP32 (Teacher),Baseline,92.4,4.80,3.45,42.0,98.0,artifacts/base_fp32.onnx
+onnx_graph_opt,ONNX Graph Opt (FP32),Graph Optimization,92.4,3.65,2.62,31.5,97.8,artifacts/onnx_graph_opt.onnx
+onnx_fp16,ONNX FP16 Quantized,Quantization (FP16),92.3,2.10,1.51,18.4,49.2,artifacts/onnx_fp16.onnx
+pruned_20_fp32,Pruned 20% (FP32),Magnitude Pruning,91.8,3.40,2.44,29.0,78.5,artifacts/pruned_20_fp32.onnx
+onnx_dynamic_int8,ONNX Dynamic INT8,Quantization (INT8),91.7,1.15,0.83,11.2,24.8,artifacts/onnx_dynamic_int8.onnx
+pruned_40_int8,Pruned 40% + INT8,Pruning + Quantization,90.2,0.82,0.59,8.5,15.4,artifacts/pruned_40_int8.onnx
+distilled_student_fp32,Distilled Student (FP32),Knowledge Distillation,90.9,1.45,1.04,13.8,44.0,artifacts/distilled_student_fp32.onnx
+distilled_student_int8,Distilled Student + INT8,Distillation + INT8,90.5,0.65,0.47,6.4,11.5,artifacts/distilled_student_int8.onnx

@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Large compiled model weights / onnx artifacts (synthesized on demand or via live profiling)
+artifacts/*.onnx
+!artifacts/.gitkeep
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
